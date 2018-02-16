@@ -3,10 +3,11 @@ include 'head.php';
  ?>
 
 <body>
-	<form>
-		<hr>
-		<h5>CADASTRAR CLIENTE</h5>
+	
+		
 	<form method="post" action="insert.php">
+	<hr/>
+		<h5>CADASTRAR CLIENTE</h5>	
 		<input type="text" name="nome" placeholder="Digite o nome"/>
 		<input type="text" name="cpf" placeholder="Digite o cpf"/>
 		<input type="text" name="email" placeholder="Digite o email"/>

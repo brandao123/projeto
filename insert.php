@@ -15,18 +15,13 @@ $senha = $_POST['senha'];
 
 
 
- 
-
-
-
 $sql = "INSERT INTO cliente (cpf, nome, email, senha) VALUES('$cpf', '$nome', '$email', '$senha')";
 
 if ($conn-> query ($sql) === TRUE) {
-	echo "Cliente Cadastrado com sucesso";
+	header("location: form.php");
 	# code...
 }
 else{
-	header("location: form.php");
 	echo "Error:" . $sql . "<br/>" . $conn -> error;
 }
 

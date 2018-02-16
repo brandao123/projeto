@@ -3,7 +3,7 @@ include 'head.php';
  ?>
 
 <body>
-	<form>
+	
 		<hr>
 		
 

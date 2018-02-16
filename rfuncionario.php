@@ -3,7 +3,7 @@ include 'head.php';
  ?>
 
 <body>
-	<form>
+	
 		<hr>
 		<h5>CADASTRAR FUNCIONARIO</h5>
 	<form method="post" action="insert.php">
