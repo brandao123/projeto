@@ -20,7 +20,8 @@ echo "Login realizado com sucesso";
 
 }
 else{
-	echo "0 resultados";
+	header("location: loginfuncionario.php");
+	
 
 }
 $conn -> close();

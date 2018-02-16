@@ -11,7 +11,7 @@ include 'head.php';
 
 <h5>LOGAR</h5>	
 <input type="text" name="nome" placeholder="Digite o nome"/>
-<input type="number" name="cpf" placeholder="Digite o cpf"/>
+<input type="text" name="cpf" placeholder="Digite o cpf"/>
 		
 	
 		
