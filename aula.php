@@ -10,19 +10,13 @@ $email = $_POST['email'];
 $senha = $_POST['senha'];
 
 
-$sql = "SELECT*FROM usuario WHERE email=$email AND senha=$senha";
+$sql = "SELECT*FROM cliente WHERE email='$email' AND senha='$senha'";
 $result = $conn -> query($sql);
 if ($result->num_rows>0) {
-
-
-
-	while ($row = $result -> fetch_assoc()) {
-		echo $row['nome']."<br/>";
-		# code...
-	}
-	# code...
+	echo "Cliente logado com sucesso";
 }
 else{
+	header("location: rcliente.php");
 	echo "0 resultados";
 
 }

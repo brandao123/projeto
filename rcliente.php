@@ -8,11 +8,11 @@ include 'head.php';
 	<form method="post" action="insert.php">
 	<hr/>
 		<h5>CADASTRAR CLIENTE</h5>	
-		<input type="text" name="nome" placeholder="Digite o nome"/>
-		<input type="text" name="cpf" placeholder="Digite o cpf"/>
-		<input type="text" name="email" placeholder="Digite o email"/>
+		<input type="text" name="nome" placeholder="Digite o nome" required/>
+		<input type="text" name="cpf" placeholder="Digite o cpf" required/>
+		<input type="text" name="email" placeholder="Digite o email" required/>
 		
-		<input type="password" name="senha" placeholder="Digite a senha"/>
+		<input type="password" name="senha" placeholder="Digite a senha" required/>
 		
 		<button class="btn btn-outline-dark my-2 my-sm-0">CADASTRAR</button>
 

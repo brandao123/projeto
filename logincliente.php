@@ -3,17 +3,15 @@ include 'head.php';
  ?>
 
 <body>
-	
-		<hr>
-		
 
-<h5>LOGAR</h5>
 	<form method="post" action="aula.php">
-		<input type="text" name="email" placeholder="Digite o email"/>
+	<hr>
+	<h5>LOGIN</h5>
+		<input type="text" name="email" placeholder="Digite o email" required/>
 		
-		<input type="text" name="senha" placeholder="Digite a senha"/>
+		<input type="password" name="senha" placeholder="Digite a senha" required/>
 		
-		<button class="btn btn-outline-danger my-2 my-sm-0">LOGAR</button>
+		<button class="btn btn-outline-dark my-2 my-sm-0">LOGAR</button>
 
 	</form>
 
