@@ -50,8 +50,12 @@
    <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Digite sua pesquisa" aria-label="Search" name="nome" >
       <button class="btn btn-outline-dark my-2 my-sm-0" type="submit" href="....php">Procurar</button>
-    </form>
+   </form>
    
+   <form class="form-inline my-2 my-lg-0">
+      <button class="btn btn-link my-2 my-sm-0" href="logincliente.php">Login</button>
+      <button class="btn btn-link my-2 my-sm-0" href="rcliente.php">Cadastre-se</button>
+   </form>
 
 </nav>
 <hr>
@@ -61,11 +65,11 @@
     <div class="center">
      
 
-<a href="rcliente.php" class="badge badge-dark">registrar cliente</a>
-<a href="rfuncionario.php" class="badge badge-dark">registrar funcionario</a>
-<a href="logincliente.php" class="badge badge-dark">login cliente</a>
-<a href="loginfuncionario.php" class="badge badge-dark">login funcionario</a>
-<a href="cadproduto.php" class="badge badge-dark">Cadastrar Produto</a>
+
+
+
+
+
 <a href="#" class="badge badge-dark">link</a>
 <a href="#" class="badge badge-dark">link</a>
 <a href="#" class="badge badge-dark">link</a>

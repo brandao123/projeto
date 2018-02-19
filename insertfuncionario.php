@@ -19,7 +19,7 @@ $idade = $_POST['idade'];
 $sql = "INSERT INTO fucionario (nome, cpf, idade) VALUES('$nome', '$cpf', '$idade')";
 
 if ($conn-> query ($sql) === TRUE) {
-	header("location:form.php");
+	header("location: form.php");
 	# code...
 }
 else{

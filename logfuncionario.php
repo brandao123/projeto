@@ -15,12 +15,12 @@ $result = $conn -> query($sql);
 
 if ($result->num_rows>0) {
 
-echo "Login realizado com sucesso";
+header("location: form.php");
 
 
 }
 else{
-	header("location: loginfuncionario.php");
+	echo "Error";
 	
 
 }
