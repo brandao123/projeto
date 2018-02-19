@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.1
--- http://www.phpmyadmin.net
+-- version 4.7.4
+-- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 16-Fev-2018 às 22:33
--- Versão do servidor: 10.1.19-MariaDB
--- PHP Version: 7.0.13
+-- Generation Time: 19-Fev-2018 às 23:09
+-- Versão do servidor: 10.1.29-MariaDB
+-- PHP Version: 7.1.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -29,7 +31,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `cliente` (
   `id` int(4) NOT NULL,
   `nome` varchar(255) COLLATE utf8_bin NOT NULL,
-  `cpf` int(11) NOT NULL,
+  `cpf` bigint(11) NOT NULL,
   `email` varchar(255) COLLATE utf8_bin NOT NULL,
   `senha` varchar(255) COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
@@ -43,7 +45,7 @@ CREATE TABLE `cliente` (
 CREATE TABLE `fucionario` (
   `id` int(4) NOT NULL,
   `nome` varchar(255) COLLATE utf8_bin NOT NULL,
-  `cpf` int(11) NOT NULL,
+  `cpf` bigint(11) NOT NULL,
   `idade` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
@@ -59,6 +61,13 @@ CREATE TABLE `produto` (
   `descricao` varchar(255) COLLATE utf8_bin NOT NULL,
   `foto` varchar(255) COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Extraindo dados da tabela `produto`
+--
+
+INSERT INTO `produto` (`id`, `nome`, `descricao`, `foto`) VALUES
+(1, 'iphone', '64gb', 'iphone.jpg');
 
 --
 -- Indexes for dumped tables
@@ -90,17 +99,21 @@ ALTER TABLE `produto`
 -- AUTO_INCREMENT for table `cliente`
 --
 ALTER TABLE `cliente`
-  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
 --
 -- AUTO_INCREMENT for table `fucionario`
 --
 ALTER TABLE `fucionario`
-  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
 --
 -- AUTO_INCREMENT for table `produto`
 --
 ALTER TABLE `produto`
-  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
