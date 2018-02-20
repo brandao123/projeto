@@ -21,7 +21,7 @@ include'head.php';
   <div class="card-body">
     <h5 class="card-title">Titulo</h5>
     <p class="card-text">...</p>
-    <a href="#" class="btn btn-outline-dark">Pesquisar</a>
+    <a href="#" class="btn btn-primary">Pesquisar</a>
   </div>
 </div>
     </div>
@@ -31,7 +31,7 @@ include'head.php';
   <div class="card-body">
     <h5 class="card-title">Titulo</h5>
     <p class="card-text">...</p>
-    <a href="#" class="btn btn-outline-dark">Pesquisar</a>
+    <a href="#" class="btn btn-primary">Pesquisar</a>
   </div>
 </div>
     </div>
@@ -41,7 +41,7 @@ include'head.php';
   <div class="card-body">
     <h5 class="card-title">Titulo</h5>
     <p class="card-text">...</p>
-    <a href="#" class="btn btn-outline-dark">Pesquisar</a>
+    <a href="#" class="btn btn-primary">Pesquisar</a>
   </div>
 </div>
     </div>
@@ -58,11 +58,3 @@ include'head.php';
 <?php 
 include 'footer.php';
  ?>
-
-
-
-
-
-
-
-

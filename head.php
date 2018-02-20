@@ -14,14 +14,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 
 	<script src="js/bootstrap.min.js"></script>
-	
-
-
-
-
-
-
-
 
 
 <div class="container-fluid superior ">
@@ -36,10 +28,9 @@
 
 
 
-
 <!-- Image and text -->
 
-<nav  class="navbar navbar-light bg-light">
+<nav  class="navbar navbar-light bg-light active">
 
   <a class="navbar-brand" href="form.php">
 
@@ -70,9 +61,12 @@
 
 
 
-<a href="#" class="badge badge-dark">link</a>
-<a href="#" class="badge badge-dark">link</a>
-<a href="#" class="badge badge-dark">link</a>
+<a class="btn btn-outline-dark my-2 my-sm-0" href="celular.php" class="badge badge-dark">Celulares</a>
+<a class="btn btn-outline-dark my-2 my-sm-0" href="informatica.php" class="badge badge-dark">Informática</a>
+<a class="btn btn-outline-dark my-2 my-sm-0" href="livros.php" class="badge badge-dark">Livros</a>
+<a class="btn btn-outline-dark my-2 my-sm-0" href="roupas.php" class="badge badge-dark">Roupas</a>
+<a class="btn btn-outline-dark my-2 my-sm-0" href="jogos.php" class="badge badge-dark">Jogos</a>
+<a class="btn btn-outline-dark my-2 my-sm-0" href="notebook.php" class="badge badge-dark">Notebooks</a>
 <hr>
     </div>
 
