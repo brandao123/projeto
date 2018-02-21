@@ -44,8 +44,8 @@
    </form>
    
    <form class="form-inline my-2 my-lg-0">
-      <button class="btn btn-link my-2 my-sm-0" href="logincliente.php">Login</button>
-      <button class="btn btn-link my-2 my-sm-0" href="rcliente.php">Cadastre-se</button>
+      <a class="btn btn-link my-2 my-sm-0" href="logincliente.php">Login</a>
+      <a class="btn btn-link my-2 my-sm-0" href="rcliente.php">Cadastre-se</a>
    </form>
 
 </nav>
