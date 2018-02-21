@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.4
--- https://www.phpmyadmin.net/
+-- version 4.5.1
+-- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 19-Fev-2018 às 23:09
--- Versão do servidor: 10.1.29-MariaDB
--- PHP Version: 7.1.12
+-- Generation Time: 19-Fev-2018 às 23:39
+-- Versão do servidor: 10.1.19-MariaDB
+-- PHP Version: 7.0.13
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -67,7 +65,22 @@ CREATE TABLE `produto` (
 --
 
 INSERT INTO `produto` (`id`, `nome`, `descricao`, `foto`) VALUES
-(1, 'iphone', '64gb', 'iphone.jpg');
+(2, 'iphone6', 'Marca: Apple Sistema operacional: iOS Tamanho da tela: Tela de 4,7 polegadas ResoluÃ§Ã£o da cÃ¢mera traseira: 5 megapixels Recurso: 4G LTE', 'cel1.jpg'),
+(3, 'iphone6plus', 'Marca: Apple Sistema operacional: iOS Autonomia da bateria: 24 horas de conversaÃ§Ã£o Peso: 172 gramas MemÃ³ria interna: 16 GB NÃºmero de chips: 1 chip', 'cel2.jpg'),
+(5, 'pendrive', 'Pen Drives 8 GB SanDisk ', 'info1.jpg'),
+(6, 'cartucho', 'cartucho tinta preta', 'info2.jpg'),
+(7, 'pendrivee', '8gb', 'info3.jpg'),
+(8, 'illuminati', 'Wilson conseguiu inverter todas as minhas polaridades mentais, como se me tivessem arrastado atravÃ©s do infinito.â€ Philip K. Dick â€œNada Ã© verdade. Tudo Ã© permissÃ­vel.â€ Hassan I Sabbah, fundador dos Illuminati em 1090 SerÃ¡ que toda a histÃ³ria n', 'livro1.jpg'),
+(9, 'imaginacao', 'Em A imaginaÃ§Ã£o, encontra-se um Sartre prÃ©-Existencialismo e prÃ©-Segunda Guerra Mundial, fazendo uso de seus estudos sobre a fenomenologia - mÃ©todo desenvolvido pelo filÃ³sofo alemÃ£o Edmund Husserl ', 'livro2.jpg'),
+(10, 'virando', 'Tudo se inicia quando AtÃ­lio, um espÃ­rito maligno e poderoso, lÃ­der de uma quadrilha de criminosos no submundo astral, decide que Mizael, seu protegido, deve reencarnar para levar o mal Ã  Terra. Afinal, o crime era a Ãºnica coisa que ele sabia fazer.', 'livro3.jpg'),
+(11, 'azus', 'Notebook Asus Vivobook X510UA-BR485T Intel Core i5 4GB 1TB Tela Nano Edge 15,6 Windows 10 - Vermelho', 'pc1.jpg'),
+(12, 'iphone8', 'iPhone 8 Apple 64GB 4G Tela 4,7â€ - Retina CÃ¢m 12MP + Selfie 7MP iOS 11 Proc. Chip A11', 'cel3.jpg'),
+(13, 'camisaA', 'Camisa Preta, GG', 'camisa1.jpg'),
+(14, 'camisaB', 'Camisa Preta, GG', 'camisa2.jpg'),
+(15, 'camisaC', 'Camisa Preta, GG', 'camisa3.jpg'),
+(16, 'POKI', 'Multiplayer', 'jogo1.jpg'),
+(17, 'JM1', 'Jogos motais, Terror', 'jogo2.jpg'),
+(18, 'angrybird', 'Infantil', 'jogo3.jpg');
 
 --
 -- Indexes for dumped tables
@@ -100,20 +113,16 @@ ALTER TABLE `produto`
 --
 ALTER TABLE `cliente`
   MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-
 --
 -- AUTO_INCREMENT for table `fucionario`
 --
 ALTER TABLE `fucionario`
   MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
-
 --
 -- AUTO_INCREMENT for table `produto`
 --
 ALTER TABLE `produto`
-  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-COMMIT;
-
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
