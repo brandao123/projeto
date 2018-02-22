@@ -29,7 +29,7 @@ if($result->num_rows>0){
    
 
 
-
+ 
 
     echo ";<div class='col-sm'>";
      echo "; <div class='card' style='width: 18rem;'>";

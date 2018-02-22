@@ -30,17 +30,17 @@
 
 <!-- Image and text -->
 
-<nav  class="navbar navbar-light bg-light active">
+<nav class="navbar navbar-light" style="background-color: #A9A9A9;">
 
   <a class="navbar-brand" href="form.php">
 
-    <img src="icone.png" width="40" height="40" class="d-inline-block align-top" alt="">
+    <img src="icone.png" style="color: #A9A9A9;" width="40" height="40" href="form.php" class="d-inline-block align-top" alt="">
     VENDAS.COM
   </a>
 
    <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Digite sua pesquisa" aria-label="Search" name="nome" >
-      <button class="btn btn-outline-dark my-2 my-sm-0" type="submit" href="....php">Procurar</button>
+      <button class="btn btn-outline-dark my-2 my-sm-0" type="submit" href="....php">Pesquisar</button>
    </form>
    
    <form class="form-inline my-2 my-lg-0">
@@ -61,13 +61,16 @@
 
 
 
-<a class="btn btn-outline-dark my-2 my-sm-0" href="celular.php" class="badge badge-dark">Celulares</a>
-<a class="btn btn-outline-dark my-2 my-sm-0" href="informatica.php" class="badge badge-dark">Informática</a>
-<a class="btn btn-outline-dark my-2 my-sm-0" href="livros.php" class="badge badge-dark">Livros</a>
-<a class="btn btn-outline-dark my-2 my-sm-0" href="roupas.php" class="badge badge-dark">Roupas</a>
-<a class="btn btn-outline-dark my-2 my-sm-0" href="jogos.php" class="badge badge-dark">Jogos</a>
-<a class="btn btn-outline-dark my-2 my-sm-0" href="notebook.php" class="badge badge-dark">Notebooks</a>
+<a class="btn btn-dark my-2 my-sm-0" href="celular.php" class="badge badge-dark">Celulares</a>
+<a class="btn btn-dark my-2 my-sm-0" href="informatica.php" class="badge badge-dark">Informática</a>
+<a class="btn btn-dark my-2 my-sm-0" href="livros.php" class="badge badge-dark">Livros</a>
+<a class="btn btn-dark my-2 my-sm-0" href="roupas.php" class="badge badge-dark">Roupas</a>
+<a class="btn btn-dark my-2 my-sm-0" href="jogos.php" class="badge badge-dark">Jogos</a>
+<a class="btn btn-dark my-2 my-sm-0" href="notebook.php" class="badge badge-dark">Notebooks</a>
 <hr>
+
+
+
     </div>
 
 
