@@ -9,6 +9,7 @@ include'head.php';
 
 
 <section>
+<hr>
 <div class="container">
 <div class="row">    
 
