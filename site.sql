@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 22-Fev-2018 às 23:53
+-- Generation Time: 26-Fev-2018 às 23:42
 -- Versão do servidor: 10.1.19-MariaDB
 -- PHP Version: 7.0.13
 
@@ -165,6 +165,29 @@ INSERT INTO `livro` (`id`, `nome`, `descricao`, `categoria`, `foto`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `promocao`
+--
+
+CREATE TABLE `promocao` (
+  `id` int(4) NOT NULL,
+  `nome` varchar(255) COLLATE utf8_bin NOT NULL,
+  `descricao` varchar(255) COLLATE utf8_bin NOT NULL,
+  `categoria` varchar(255) COLLATE utf8_bin NOT NULL,
+  `foto` varchar(255) COLLATE utf8_bin NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Extraindo dados da tabela `promocao`
+--
+
+INSERT INTO `promocao` (`id`, `nome`, `descricao`, `categoria`, `foto`) VALUES
+(1, 'Moto G5S', 'Smartphone Motorola Moto G5S Platinum', 'celular', 'promo1.jpg'),
+(2, 'Alienware 13', 'Intel Core I7 Touchscreen Gaming Laptop', 'notebook', 'promo2.jpg'),
+(3, 'O Senhor da Guerra', 'Autor - Daniel Aurelio', 'livro', 'promo3.jpg');
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `roupa`
 --
 
@@ -232,6 +255,12 @@ ALTER TABLE `livro`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `promocao`
+--
+ALTER TABLE `promocao`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `roupa`
 --
 ALTER TABLE `roupa`
@@ -276,6 +305,11 @@ ALTER TABLE `jogo`
 --
 ALTER TABLE `livro`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT for table `promocao`
+--
+ALTER TABLE `promocao`
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `roupa`
 --
