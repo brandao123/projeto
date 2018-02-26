@@ -4,7 +4,7 @@ include 'head.php';
 
 <body>
 
-	<form method="post" action="aula.php">
+	<form method="post" action="select.php">
 	<hr>
 	<h5>Login</h5>
 		<input type="text" name="email" placeholder="Digite o email" required/><br/><hr/>
