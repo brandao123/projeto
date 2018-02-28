@@ -46,7 +46,12 @@
    <form class="form-inline my-2 my-lg-0">
       <a class="btn btn-link my-2 my-sm-0" href="logincliente.php">Login</a>
       <a class="btn btn-link my-2 my-sm-0" href="rcliente.php">Cadastre-se</a>
+
    </form>
+<a class="navbar-brand" href="#">
+    <img src="icone2.png" width="40" height="40" class="d-inline-block align-top" alt="">
+  </a>
+
 
 </nav>
 <hr>
