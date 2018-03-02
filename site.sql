@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 02-Mar-2018 às 01:20
+-- Generation Time: 03-Mar-2018 às 00:55
 -- Versão do servidor: 10.1.29-MariaDB
 -- PHP Version: 7.1.12
 
@@ -172,6 +172,19 @@ INSERT INTO `livro` (`id`, `nome`, `descricao`, `preco`, `categoria`, `foto`) VA
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `pedidos`
+--
+
+CREATE TABLE `pedidos` (
+  `id` int(3) NOT NULL,
+  `pedido` int(3) NOT NULL,
+  `nome` varchar(255) COLLATE utf8_bin NOT NULL,
+  `status` varchar(255) COLLATE utf8_bin NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `promocao`
 --
 
@@ -264,6 +277,12 @@ ALTER TABLE `livro`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `pedidos`
+--
+ALTER TABLE `pedidos`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `promocao`
 --
 ALTER TABLE `promocao`
@@ -322,6 +341,12 @@ ALTER TABLE `livro`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
+-- AUTO_INCREMENT for table `pedidos`
+--
+ALTER TABLE `pedidos`
+  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `promocao`
 --
 ALTER TABLE `promocao`
@@ -331,7 +356,7 @@ ALTER TABLE `promocao`
 -- AUTO_INCREMENT for table `roupa`
 --
 ALTER TABLE `roupa`
-  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
