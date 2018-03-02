@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 01-Mar-2018 às 01:44
+-- Generation Time: 02-Mar-2018 às 01:20
 -- Versão do servidor: 10.1.29-MariaDB
 -- PHP Version: 7.1.12
 
@@ -203,6 +203,7 @@ CREATE TABLE `roupa` (
   `id` int(4) NOT NULL,
   `nome` varchar(255) COLLATE utf8_bin NOT NULL,
   `descricao` varchar(255) COLLATE utf8_bin NOT NULL,
+  `preco` int(4) NOT NULL,
   `categoria` varchar(255) COLLATE utf8_bin NOT NULL,
   `foto` varchar(255) COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
@@ -211,10 +212,10 @@ CREATE TABLE `roupa` (
 -- Extraindo dados da tabela `roupa`
 --
 
-INSERT INTO `roupa` (`id`, `nome`, `descricao`, `categoria`, `foto`) VALUES
-(1, 'Camisa Black', 'Preta, GG', 'roupa', 'camisa1.jpg'),
-(2, 'Casaco Black', 'Preto, GG', 'roupa', 'camisa2.jpg'),
-(3, 'Camisa Colorida', 'Colorida, GG', 'roupa', 'camisa3.jpg');
+INSERT INTO `roupa` (`id`, `nome`, `descricao`, `preco`, `categoria`, `foto`) VALUES
+(1, 'Camisa Black', 'Preta, GG', 100, 'roupa', 'camisa1.jpg'),
+(2, 'Casaco Black', 'Preto, GG', 100, 'roupa', 'camisa2.jpg'),
+(3, 'Camisa Colorida', 'Colorida, GG', 100, 'roupa', 'camisa3.jpg');
 
 --
 -- Indexes for dumped tables
@@ -288,7 +289,7 @@ ALTER TABLE `celular`
 -- AUTO_INCREMENT for table `cliente`
 --
 ALTER TABLE `cliente`
-  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `computador`
@@ -300,7 +301,7 @@ ALTER TABLE `computador`
 -- AUTO_INCREMENT for table `fucionario`
 --
 ALTER TABLE `fucionario`
-  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `informatica`
@@ -330,7 +331,7 @@ ALTER TABLE `promocao`
 -- AUTO_INCREMENT for table `roupa`
 --
 ALTER TABLE `roupa`
-  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
