@@ -90,7 +90,7 @@ include'head.php';
 			</table>
 
 			<a class="btn btn-outline-dark" href="informatica.php">Continuar Comprando</a>
-			<button class="btn btn-outline-dark" type="submit">Atualizar Carrinhoinformatica</button>
+			<button class="btn btn-outline-dark" type="submit">Atualizar Carrinho</button>
 
 			</form>
 	<?php endif?>
