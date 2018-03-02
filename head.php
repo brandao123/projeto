@@ -48,9 +48,7 @@
       <a class="btn btn-link my-2 my-sm-0" href="rcliente.php">Cadastre-se</a>
 
    </form>
-<a class="navbar-brand" href="indexcarrinho.php">
-    <img src="icone2.png" width="40" height="40" class="d-inline-block align-top" alt="">
-  </a>
+
 
 
 </nav>

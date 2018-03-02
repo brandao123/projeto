@@ -1,14 +1,14 @@
 <?php 
 
-function getcelulares($pdo){
-	$sql = "SELECT *  FROM celular ";
+function getroupas($pdo){
+	$sql = "SELECT *  FROM roupa ";
 	$stmt = $pdo->prepare($sql);
 	$stmt->execute();
 	return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
-function getcelularesByIds($pdo, $ids) {
-	$sql = "SELECT * FROM celular WHERE id IN (".$ids.")";
+function getroupasByIds($pdo, $ids) {
+	$sql = "SELECT * FROM roupa WHERE id IN (".$ids.")";
 	$stmt = $pdo->prepare($sql);
 	$stmt->execute();
 	return $stmt->fetchAll(PDO::FETCH_ASSOC);

@@ -1,7 +1,10 @@
 <?php 
-	session_start();
-	require_once "functions/product.php";
-	require_once "functions/cart.php";
+include'head.php';
+ ?>
+<?php 
+ 	session_start();
+	require_once "functions/productcelular.php";
+	require_once "functions/cartcelular.php";
 
 	$pdoConnection = require_once "connection.php";
 
@@ -22,7 +25,7 @@
 				}
 			}
 		} 
-		header('location: carrinho.php');
+		header('location: carrinhocelular.php');
 	}
 
 	$resultsCarts = getContentCart($pdoConnection);
@@ -38,17 +41,19 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" />
 
 </head>
+
 <body>
+
 	<div class="container">
 		<div class="card mt-5">
 			 <div class="card-body">
 	    		<h4 class="card-title">Carrinho</h4>
-	    		<a href="index.php">Lista de Produtos</a>
+	    		<a class="btn btn-outline-dark" href="celular.php">Lista de Produtos</a>
 	    	</div>
 		</div>
 
 		<?php if($resultsCarts) : ?>
-			<form action="carrinho.php?acao=up" method="post">
+			<form action="carrinhocelular.php?acao=up" method="post">
 			<table class="table table-strip">
 				<thead>
 					<tr>
@@ -71,7 +76,7 @@
 							</td>
 						<td>R$<?php echo number_format($result['preco'], 2, ',', '.')?></td>
 						<td>R$<?php echo number_format($result['subtotal'], 2, ',', '.')?></td>
-						<td><a href="carrinho.php?acao=del&id=<?php echo $result['id']?>" class="btn btn-danger">Remover</a></td>
+						<td><a href="carrinhocelular.php?acao=del&id=<?php echo $result['id']?>" class="btn btn-outline-danger">Remover</a></td>
 						
 					</tr>
 				<?php endforeach;?>
@@ -84,8 +89,8 @@
 				
 			</table>
 
-			<a class="btn btn-info" href="indexcarrinho.php">Continuar Comprando</a>
-			<button class="btn btn-primary" type="submit">Atualizar Carrinho</button>
+			<a class="btn btn-outline-dark" href="celular.php">Continuar Comprando</a>
+			<button class="btn btn-outline-dark" type="submit">Atualizar carrinho</button>
 
 			</form>
 	<?php endif?>
