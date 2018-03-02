@@ -1,10 +1,10 @@
 <?php 
 include 'conexao.php';
 
-$senha = $_POST['senha'];
+$status = $_POST['status'];
 $id = $_POST['id'];
 
-$sql = "UPDATE usuario SET senha='$senha' WHERE id=$id";
+$sql = "UPDATE pedido SET status='$status' WHERE id=$id";
 
 if ($conn->query($sql) === TRUE) {
 	echo "Atualizado";

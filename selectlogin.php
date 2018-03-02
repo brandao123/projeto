@@ -13,7 +13,7 @@ $result = $conn->query($sql);
 
 if ($result-> num_rows > 0){
 	$_SESSION['logado'] = 1;
-	echo "Logado";
+	header("location: form.php");
 	// output data of each row
 	while($row = $result->fetch_assoc()){
 
@@ -21,7 +21,6 @@ if ($result-> num_rows > 0){
 }
 
 else{
-	echo "Email ou senha incorretos!";
 	header("location: logincliente.php"); 
 	
 }
