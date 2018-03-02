@@ -47,7 +47,7 @@ include'head.php';
 	<div class="container">
 		<div class="card mt-5">
 			 <div class="card-body">
-	    		<h4 class="card-title">Carrinhoinformatica</h4>
+	    		<h4 class="card-title">Carrinho</h4>
 	    		<a class="btn btn-outline-dark" href="informatica.php">Lista de Produtos</a>
 	    	</div>
 		</div>
