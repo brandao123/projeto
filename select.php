@@ -13,7 +13,7 @@ $senha = $_POST['senha'];
 $sql = "SELECT*FROM cliente WHERE email='$email' AND senha='$senha'";
 $result = $conn -> query($sql);
 if ($result->num_rows>0) {
-	echo "Cliente logado com sucesso";
+	header("location: form.php");
 }
 else{
 	header("location: rcliente.php");

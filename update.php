@@ -1,13 +1,13 @@
 <?php 
 include 'conexao.php';
 
-$status = $_POST['status'];
 $id = $_POST['id'];
+$status = $_POST['status'];
 
-$sql = "UPDATE pedido SET id='$id' WHERE status=$status";
+$sql = "UPDATE pedidos SET status='$status' WHERE id=$id";
 
 if ($conn->query($sql) === TRUE) {
-	echo "Atualizado";
+	header("location: updatestatus.php");
 
 	# code...
 }
