@@ -24,7 +24,7 @@ function updateCart($id, $quantidade) {
 		 	deleteCart($id);
 		}
 	}
-}
+} 
 
 function getContentCart($pdo) {
 	
@@ -44,6 +44,8 @@ function getContentCart($pdo) {
 							  'preco' => $celular['preco'],
 							  'quantidade' => $cart[$celular['id']],
 							  'subtotal' => $cart[$celular['id']] * $celular['preco'],
+							  'parcela' => $cart[$celular['id']] / $celular['parcela'],
+
 						);
 		}
 	}
@@ -54,9 +56,18 @@ function getContentCart($pdo) {
 function getTotalCart($pdo) {
 	
 	$total = 0;
-
+    
 	foreach(getContentCart($pdo) as $celular) {
 		$total += $celular['subtotal'];
 	} 
 	return $total;
+}
+function getParcelaCart($pdo) {
+	
+	$parcela = 1;
+    
+	foreach(getContentCart($pdo) as $celular) {
+		$subtotal / $parcela['parcela'];
+	} 
+	return $parcela;
 }

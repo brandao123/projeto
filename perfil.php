@@ -1,5 +1,5 @@
 <?php 
-include'head.php';
+include'headerlogin.php';
 
 
 
@@ -21,7 +21,7 @@ include'head.php';
 <?php
 include "conexao.php";
 
-$sql = "SELECT * FROM promocao";
+$sql = "SELECT * FROM cliente";
 $result = $conn->query($sql);
 
 if($result->num_rows>0){
@@ -31,11 +31,13 @@ if($result->num_rows>0){
     echo "<div class='col-sm'>";
     echo "<div class='card' style='width: 18rem'>";
 
-   echo "<img src='produtos/".$row['foto']."'>";
+   echo "<img class='card-img-top' src='foto/".$row['foto']."'>";
     echo "<div class='card-body'>";
     echo "<h5 class='card-title'>".$row['nome']."</h5>";
-    echo "<p class='card-text'> ".$row['descricao']." </p>";
-    echo " <a href='#' class='btn btn-outline-dark'>Comprar</a>";
+    echo "<p class='card-text'> ".$row['email']." </p>";
+    echo " <a href='form.php' class='btn btn-outline-dark'>Voltar</a>";
+    echo " <a href='#.php' class='btn btn-outline-dark'>Alterar Senha</a>";
+   
     echo "</div>";
     echo"</div>";
     echo"</div>";

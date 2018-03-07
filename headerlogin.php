@@ -30,6 +30,7 @@
 
 <!-- Image and text -->
 
+
 <nav  class="navbar navbar-light bg-light active">
 
   <a class="navbar-brand" href="form.php">
@@ -42,13 +43,23 @@
       <input class="form-control mr-sm-2" type="search" placeholder="Digite sua pesquisa" aria-label="Search" name="nome" >
       <button class="btn btn-outline-dark my-2 my-sm-0" type="submit" href="....php">Procurar</button>
    </form>
-   
+   <section>
+
+<div class="container">
+<div class="row">    
+
+
+
    <form class="form-inline my-2 my-lg-0">
-      <a class="btn btn-link my-2 my-sm-0" href="logincliente.php">Login</a>
-      <a class="btn btn-link my-2 my-sm-0" href="rcliente.php">Cadastre-se</a>
+<img src="foto/foto2.jpg"  class="rounded-circle">   
+   
 
-   </form>
 
+
+   </div>
+
+  </div>
+</section>
 
 
 </nav>
@@ -64,12 +75,12 @@
 
 
 
-<a class="btn btn-outline-dark my-2 my-sm-0" href="celular1.php" class="badge badge-dark">Celulares</a>
-<a class="btn btn-outline-dark my-2 my-sm-0" href="informatica1.php" class="badge badge-dark">Informática</a>
-<a class="btn btn-outline-dark my-2 my-sm-0" href="livros1.php" class="badge badge-dark">Livros</a>
-<a class="btn btn-outline-dark my-2 my-sm-0" href="roupas1.php" class="badge badge-dark">Roupas</a>
-<a class="btn btn-outline-dark my-2 my-sm-0" href="jogos1.php" class="badge badge-dark">Jogos</a>
-<a class="btn btn-outline-dark my-2 my-sm-0" href="notebook1.php" class="badge badge-dark">Notebooks</a>
+<a class="btn btn-outline-dark my-2 my-sm-0" href="celular.php" class="badge badge-dark">Celulares</a>
+<a class="btn btn-outline-dark my-2 my-sm-0" href="informatica.php" class="badge badge-dark">Informática</a>
+<a class="btn btn-outline-dark my-2 my-sm-0" href="livros.php" class="badge badge-dark">Livros</a>
+<a class="btn btn-outline-dark my-2 my-sm-0" href="roupas.php" class="badge badge-dark">Roupas</a>
+<a class="btn btn-outline-dark my-2 my-sm-0" href="jogos.php" class="badge badge-dark">Jogos</a>
+<a class="btn btn-outline-dark my-2 my-sm-0" href="notebook.php" class="badge badge-dark">Notebooks</a>
 <hr>
     </div>
 

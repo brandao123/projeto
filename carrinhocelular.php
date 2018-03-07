@@ -1,5 +1,5 @@
 <?php 
-include'head.php';
+include'headerlogin.php';
  ?>
 <?php 
  	session_start();
@@ -30,9 +30,10 @@ include'head.php';
 
 	$resultsCarts = getContentCart($pdoConnection);
 	$totalCarts  = getTotalCart($pdoConnection);
+	$parcela = getParcelaCart($pdoConnection);
 
 
-?>
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,7 +62,10 @@ include'head.php';
 						<th>Quantidade</th>
 						<th>Preço</th>
 						<th>Subtotal</th>
+						<th>Parcela</th>
 						<th>Ação</th>
+						
+
 
 					</tr>				
 				</thead>
@@ -73,17 +77,33 @@ include'head.php';
 						<td>
 							<input type="text" name="prod[<?php echo $result['id']?>]" value="<?php echo $result['quantidade']?>" size="1" />
 														
+							
 							</td>
+
+							
 						<td>R$<?php echo number_format($result['preco'], 2, ',', '.')?></td>
 						<td>R$<?php echo number_format($result['subtotal'], 2, ',', '.')?></td>
+
+						<td>
+								<input type="text"  value="<?php echo $result['parcela']?>" size="1" />
+							</td>
+						
 						<td><a href="carrinhocelular.php?acao=del&id=<?php echo $result['id']?>" class="btn btn-outline-danger">Remover</a></td>
 						
-					</tr>
+					</tr> 
 				<?php endforeach;?>
 				 <tr>
 				 	<td colspan="3" class="text-right"><b>Total: </b></td>
 				 	<td>R$<?php echo number_format($totalCarts, 2, ',', '.')?></td>
-				 	<td></td>
+				 	<td>R$<?php echo number_format($totalCarts*1.1, 2, ',', '.')?></td>
+				 	
+				 </tr>
+
+
+				 <tr>
+				 	<td colspan="3" class="text-right"><b>Parcela: </b></td>
+				 	
+				 	<td>R$<?php echo number_format($totalCarts/$parcela, 2, ',', '.')?></td>
 				 </tr>
 				</tbody>
 				

@@ -1,5 +1,5 @@
- <?php 
-include'headerlogin.php';
+<?php 
+include'head.php';
  ?>
 
 <?php 
@@ -35,7 +35,7 @@ include'headerlogin.php';
                   ?>
                </h6>
 
-               <a class="btn btn-primary" href="carrinhojogo.php?acao=add&id=<?php echo $jogo['id']?>" class="card-link">Comprar</a>
+              
             </div>
           </div>
         </div>
