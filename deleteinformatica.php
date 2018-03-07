@@ -4,10 +4,10 @@ include 'conexao.php';
 
 $id = $_POST['id'];
 
-$sql = "DELETE FROM usuario WHERE id=$id";
+$sql = "DELETE FROM informatica WHERE id=$id";
 
 if ($conn->query($sql) === TRUE) {
-	echo "Usuario Deletado";
+	header ("location: informatica.php");
 
 	# code...
 }
