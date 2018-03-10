@@ -51,9 +51,10 @@
 
 
    <form class="form-inline my-2 my-lg-0">
+   <a href="perfil.php">
 <img src="foto/foto2.jpg"  class="rounded-circle">   
-   
-
+ </a>
+  
 
 
    </div>

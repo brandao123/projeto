@@ -13,6 +13,7 @@ include 'head.php';
 		<input type="text" name="email" placeholder="Digite o email" required/><br/><hr/>
 		
 		<input type="password" name="senha" placeholder="Digite a senha" required/><br/><hr/>
+		<input type="text" name="foto" placeholder="Digite a foto" required/><br/><hr/>
 		
 		<button class="btn btn-outline-dark my-2 my-sm-0">CADASTRAR</button><br/>
 

@@ -24,8 +24,8 @@ include "conexao.php";
 $sql = "SELECT * FROM cliente";
 $result = $conn->query($sql);
 
-if($result->num_rows>0){
-  while($row = $result->fetch_assoc()){
+if($row = $result->fetch_assoc()){
+ 
     // echo "<img class='card-img-top'src=".$row['foto']."alt='Card image cap'>";
     
     echo "<div class='col-sm'>";
@@ -36,7 +36,7 @@ if($result->num_rows>0){
     echo "<h5 class='card-title'>".$row['nome']."</h5>";
     echo "<p class='card-text'> ".$row['email']." </p>";
     echo " <a href='form.php' class='btn btn-outline-dark'>Voltar</a>";
-    echo " <a href='#.php' class='btn btn-outline-dark'>Alterar Senha</a>";
+    echo " <a href='pedidos.php' class='btn btn-outline-dark'>Pedidos</a>";
    
     echo "</div>";
     echo"</div>";
@@ -44,7 +44,7 @@ if($result->num_rows>0){
 
 
   
-  }
+  
 }
 else{
   echo "0 resultados";

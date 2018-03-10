@@ -12,10 +12,12 @@ $email = $_POST['email'];
 
 $senha = $_POST['senha'];
 
+$foto = $_POST['foto'];
 
 
 
-$sql = "INSERT INTO cliente (cpf, nome, email, senha) VALUES('$cpf', '$nome', '$email', '$senha')";
+
+$sql = "INSERT INTO cliente (cpf, nome, email, senha, foto) VALUES('$cpf', '$nome', '$email', '$senha', '$foto')";
 
 if ($conn-> query ($sql) === TRUE) {
 	header("location: form.php");

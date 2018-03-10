@@ -33,9 +33,8 @@ if($result->num_rows>0){
 
    echo "<img src='produtos/".$row['foto']."'>";
     echo "<div class='card-body'>";
-    echo "<h5 class='card-title'>".$row['nome']."</h5>";
-    echo "<p class='card-text'> ".$row['descricao']." </p>";
-    echo " <a href='#' class='btn btn-outline-dark'>Comprar</a>";
+   
+   
     echo "</div>";
     echo"</div>";
     echo"</div>";
@@ -49,6 +48,11 @@ else{
 }
 $conn->close();
 ?>
+
+
+
+
+
 
 
    </div>
