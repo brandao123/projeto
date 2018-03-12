@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 03-Mar-2018 às 00:55
+-- Generation Time: 12-Mar-2018 às 23:35
 -- Versão do servidor: 10.1.29-MariaDB
 -- PHP Version: 7.1.12
 
@@ -57,8 +57,16 @@ CREATE TABLE `cliente` (
   `nome` varchar(255) COLLATE utf8_bin NOT NULL,
   `cpf` bigint(11) NOT NULL,
   `email` varchar(255) COLLATE utf8_bin NOT NULL,
-  `senha` varchar(255) COLLATE utf8_bin NOT NULL
+  `senha` varchar(255) COLLATE utf8_bin NOT NULL,
+  `foto` varchar(255) COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Extraindo dados da tabela `cliente`
+--
+
+INSERT INTO `cliente` (`id`, `nome`, `cpf`, `email`, `senha`, `foto`) VALUES
+(1, 'lucas', 77777777777, 'lucas@gmail.com', 'lucas', 'foto.jpg');
 
 -- --------------------------------------------------------
 
@@ -202,9 +210,9 @@ CREATE TABLE `promocao` (
 --
 
 INSERT INTO `promocao` (`id`, `nome`, `descricao`, `preco`, `categoria`, `foto`) VALUES
-(1, 'Moto G5S', 'Smartphone Motorola Moto G5S Platinum', 850, 'celular', 'promo1.jpg'),
-(2, 'Alienware 13', 'Intel Core I7 Touchscreen Gaming Laptop', 4000, 'notebook', 'promo2.jpg'),
-(3, 'O Senhor da Guerra', 'Autor - Daniel Aurelio', 55, 'livro', 'promo3.jpg');
+(1, 'Moto G5S', 'Smartphone Motorola Moto G5S Platinum', 850, 'celular', 'banner1.png'),
+(2, 'Alienware 13', 'Intel Core I7 Touchscreen Gaming Laptop', 4000, 'notebook', 'banner2.png'),
+(3, 'O Senhor da Guerra', 'Autor - Daniel Aurelio', 55, 'livro', 'banner3.png');
 
 -- --------------------------------------------------------
 
@@ -308,7 +316,7 @@ ALTER TABLE `celular`
 -- AUTO_INCREMENT for table `cliente`
 --
 ALTER TABLE `cliente`
-  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `computador`

@@ -44,7 +44,6 @@ function getContentCart($pdo) {
 							  'preco' => $celular['preco'],
 							  'quantidade' => $cart[$celular['id']],
 							  'subtotal' => $cart[$celular['id']] * $celular['preco'],
-							  'parcela' => $cart[$celular['id']] / $celular['parcela'],
 
 						);
 		}
@@ -61,13 +60,4 @@ function getTotalCart($pdo) {
 		$total += $celular['subtotal'];
 	} 
 	return $total;
-}
-function getParcelaCart($pdo) {
-	
-	$parcela = 1;
-    
-	foreach(getContentCart($pdo) as $celular) {
-		$subtotal / $parcela['parcela'];
-	} 
-	return $parcela;
 }

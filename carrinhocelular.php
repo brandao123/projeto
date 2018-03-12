@@ -30,7 +30,7 @@ include'headerlogin.php';
 
 	$resultsCarts = getContentCart($pdoConnection);
 	$totalCarts  = getTotalCart($pdoConnection);
-	$parcela = getParcelaCart($pdoConnection);
+	
 
 
  ?>
@@ -62,7 +62,7 @@ include'headerlogin.php';
 						<th>Quantidade</th>
 						<th>Preço</th>
 						<th>Subtotal</th>
-						<th>Parcela</th>
+						
 						<th>Ação</th>
 						
 
@@ -80,13 +80,10 @@ include'headerlogin.php';
 							
 							</td>
 
-							
 						<td>R$<?php echo number_format($result['preco'], 2, ',', '.')?></td>
 						<td>R$<?php echo number_format($result['subtotal'], 2, ',', '.')?></td>
 
-						<td>
-								<input type="text"  value="<?php echo $result['parcela']?>" size="1" />
-							</td>
+						
 						
 						<td><a href="carrinhocelular.php?acao=del&id=<?php echo $result['id']?>" class="btn btn-outline-danger">Remover</a></td>
 						
@@ -100,11 +97,7 @@ include'headerlogin.php';
 				 </tr>
 
 
-				 <tr>
-				 	<td colspan="3" class="text-right"><b>Parcela: </b></td>
-				 	
-				 	<td>R$<?php echo number_format($totalCarts/$parcela, 2, ',', '.')?></td>
-				 </tr>
+				
 				</tbody>
 				
 			</table>
