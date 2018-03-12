@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 12-Mar-2018 às 23:35
+-- Generation Time: 13-Mar-2018 às 00:46
 -- Versão do servidor: 10.1.29-MariaDB
 -- PHP Version: 7.1.12
 
@@ -60,13 +60,6 @@ CREATE TABLE `cliente` (
   `senha` varchar(255) COLLATE utf8_bin NOT NULL,
   `foto` varchar(255) COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
-
---
--- Extraindo dados da tabela `cliente`
---
-
-INSERT INTO `cliente` (`id`, `nome`, `cpf`, `email`, `senha`, `foto`) VALUES
-(1, 'lucas', 77777777777, 'lucas@gmail.com', 'lucas', 'foto.jpg');
 
 -- --------------------------------------------------------
 
@@ -316,7 +309,7 @@ ALTER TABLE `celular`
 -- AUTO_INCREMENT for table `cliente`
 --
 ALTER TABLE `cliente`
-  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `computador`
