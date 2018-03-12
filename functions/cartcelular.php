@@ -47,7 +47,7 @@ function getContentCart($pdo) {
 
 
 
-						
+						);
 		}
 	}
 	
@@ -63,3 +63,4 @@ function getTotalCart($pdo) {
 	} 
 	return $total;
 }
+

@@ -97,11 +97,7 @@ include'headerlogin.php';
 				 </tr>
 
 
-<<<<<<< HEAD
-				
-=======
-				 
->>>>>>> 94cefed5d1338fd1dfe8aa5a57405b487ed74994
+
 				</tbody>
 				
 			</table>
