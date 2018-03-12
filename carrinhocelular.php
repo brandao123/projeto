@@ -92,12 +92,16 @@ include'headerlogin.php';
 				 <tr>
 				 	<td colspan="3" class="text-right"><b>Total: </b></td>
 				 	<td>R$<?php echo number_format($totalCarts, 2, ',', '.')?></td>
-				 	<td>R$<?php echo number_format($totalCarts*1.1, 2, ',', '.')?></td>
+				 	
 				 	
 				 </tr>
 
 
+<<<<<<< HEAD
 				
+=======
+				 
+>>>>>>> 94cefed5d1338fd1dfe8aa5a57405b487ed74994
 				</tbody>
 				
 			</table>
