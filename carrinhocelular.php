@@ -62,7 +62,7 @@ include'headerlogin.php';
 						<th>Quantidade</th>
 						<th>Preço</th>
 						<th>Subtotal</th>
-						<th>Parcela</th>
+						
 						<th>Ação</th>
 						
 
@@ -80,7 +80,6 @@ include'headerlogin.php';
 							
 							</td>
 
-							
 						<td>R$<?php echo number_format($result['preco'], 2, ',', '.')?></td>
 						<td>R$<?php echo number_format($result['subtotal'], 2, ',', '.')?></td>
 
@@ -98,7 +97,11 @@ include'headerlogin.php';
 				 </tr>
 
 
+<<<<<<< HEAD
+				
+=======
 				 
+>>>>>>> 94cefed5d1338fd1dfe8aa5a57405b487ed74994
 				</tbody>
 				
 			</table>
