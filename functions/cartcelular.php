@@ -44,12 +44,10 @@ function getContentCart($pdo) {
 							  'preco' => $celular['preco'],
 							  'quantidade' => $cart[$celular['id']],
 							  'subtotal' => $cart[$celular['id']] * $celular['preco'],
-<<<<<<< HEAD
-=======
-							  
->>>>>>> 94cefed5d1338fd1dfe8aa5a57405b487ed74994
 
-						);
+
+
+						
 		}
 	}
 	
@@ -65,7 +63,3 @@ function getTotalCart($pdo) {
 	} 
 	return $total;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 94cefed5d1338fd1dfe8aa5a57405b487ed74994
